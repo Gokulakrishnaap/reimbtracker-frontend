@@ -25,7 +25,7 @@ export function Login() {
       .then((res) => {
         if (res.message === "Login Successful") {
           localStorage.setItem("User Data", JSON.stringify(res.user));
-          navigate("/");
+          navigate("/home");
         } else {
           setErrMsg(res.message);
         }

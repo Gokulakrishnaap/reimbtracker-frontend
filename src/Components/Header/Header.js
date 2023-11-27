@@ -9,7 +9,7 @@ export function Header() {
     <div className="header">
       <div className="titleAndIcon">
         <PollIcon sx={{ fontSize: 30 }} />
-        <p className="appTitle" onClick={() => history("/")}>
+        <p className="appTitle" onClick={() => history("/home")}>
           RI-Tracker
         </p>
       </div>
@@ -18,7 +18,7 @@ export function Header() {
         color="success"
         size="small"
         style={{ fontSize: "10px", fontFamily: "Montserrat, sans-serif" }}
-        onClick={() => history("/login")}
+        onClick={() => history("/")}
       >
         Logout
       </Button>
