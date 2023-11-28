@@ -14,7 +14,7 @@ export function Login() {
       password,
     };
 
-    fetch("https://comfortable-seal-tux.cyclic.app/login", {
+    fetch("https://comfortable-seal-tux.cyclic.app/api/auth/login", {
       method: "POST",
       body: JSON.stringify(credentials),
       headers: {

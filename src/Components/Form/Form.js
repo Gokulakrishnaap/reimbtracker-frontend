@@ -24,7 +24,7 @@ export function Form() {
 
     console.log("Form data...", formData);
 
-    fetch("https://comfortable-seal-tux.cyclic.app/formsubmit", {
+    fetch("https://comfortable-seal-tux.cyclic.app/api/auth/formsubmit", {
       method: "POST",
       body: JSON.stringify(formData),
       headers: {

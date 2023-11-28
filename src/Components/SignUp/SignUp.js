@@ -25,9 +25,8 @@ export function SignUp() {
     };
 
     // http://localhost:8000/api/auth/signup
-    // https://comfortable-seal-tux.cyclic.app/signup
 
-    fetch("https://comfortable-seal-tux.cyclic.app/signup", {
+    fetch("https://comfortable-seal-tux.cyclic.app/api/auth/signup", {
       method: "POST",
       body: JSON.stringify(addUser),
       headers: {
